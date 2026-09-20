@@ -1,0 +1,58 @@
+148 rows
+
+row 86: Let's say you're going to receive $75 in 7 years, with a discount rate of 9%. What is its value today?...
+  gold answer : $41.06
+  recomputed  : $41.03
+  note        : 75 / 1.09^7
+
+row 98: A corporation's WACC is 9%, its after-tax cost of debt is 5%, and its debt-to-equity ratio is 60%. What is its...
+  gold answer : 10.56%
+  recomputed  : 11.40%
+  note        : (9% - 0.375 * 5%) / 0.625
+
+row 100: A firm has 200 million of equity, 100 million of debt, and 70 million of cash. The company raises a 30 million...
+  gold answer : 30M increase
+  recomputed  : 0M change
+  note        : equity = EV - debt + cash, with debt up 30 and cash down 30 as the reasoning assumes; the reasoning text is row 99's, word for word
+
+row 103: A private equity group acquires a company with 200M of EBITDA at a 4x multiple, financing 50% with debt. In th...
+  gold answer : 3x MOIC, 25% IRR
+  recomputed  : 3.75x MOIC, 30% IRR
+  note        : the reasoning still subtracts the 400 of debt the question says was paid down, and adds 100 of cash the question never mentions
+
+row 110: A firm records 120 million in total revenue and 90 million in operating costs, yielding 30 million in operatin...
+  gold answer : $11.5 million increase
+  recomputed  : $11.25 million increase
+  note        : the reasoning also ends at 11.25; only the answer field says 11.5
+
+row 112: You run a coffee mug shop charging $25 per mug. Your production cost per mug is $12, and you also pay a 15% ov...
+  gold answer : $457.50
+  recomputed  : cannot be computed
+  note        : the question never says how many mugs are sold; the reasoning multiplies by 15
+
+row 146: A firm borrowed $300 in order to buy goods. It later sold those goods for $600, incurred $150 in operating exp...
+  gold answer : In the income statement, revenue is up 600, subtract 300 for COGS, 150 for Opex, so EBIT i
+  recomputed  : net income 118.8, cash up 382.8
+  note        : same steps as the reasoning, but it charges 12% interest (36) where the question says 6% (18)
+
+row 142: How are the three statement are affected when a company buys $300 of inventory by issuing new debt?...
+  gold answer : There is no immediate impact on the income statement since revenue has yet to be recognize
+  recomputed  : issuing debt raises cash flow from financing by $300
+  note        : answer text says it 'reduces' it
+
+row 64: Determine ROA for 2024....
+  gold answer : 11.31%
+  recomputed  : 10.92%
+  note        : that expression is not 11.31%
+
+row 18: Calculate WACC for 2024....
+  gold answer : 9.56%
+  recomputed  : 9.56%
+  note        : the expression on the last line works out to the answer field, not to the 9.66% written after it
+
+row 78: Calculate Inventory Turnover for 2024....
+  gold answer : 12.6x
+  recomputed  : 12.6x
+  note        : merchandise costs over average inventory; the attached reasoning never mentions inventory
+
+rows sharing identical reasoning text: [[99, 100]]
